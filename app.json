@@ -1,5 +1,7 @@
 {
   "expo": {
+    "name": "NBA Player Ranker",
+    "description": "A simple app that lets anyone upvote or downvote the top 100 scorers in the NBA (current season PPG) and tracks the total vote tallies over time.",
     "sdkVersion": "25.0.0"
   }
 }
