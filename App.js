@@ -40,6 +40,7 @@ export default class App extends React.Component {
     this.getContent(); // refresh the list when we're done
   }
 
+  //Gets random player from list of top 100 scorers
   getPlayers() {
     let player1 = Math.floor(Math.random()*100)
     this.setState({
@@ -52,7 +53,7 @@ export default class App extends React.Component {
                 this.state.content[player1].fields.votes]
     })
     this.setState({
-      time: [1]
+      time: [1] //update time to remove start button
     })
   }
 
@@ -79,7 +80,7 @@ export default class App extends React.Component {
     // Make the request
     fetch(request).then(response => response.json()).then(json => {
       this.getContent(); // refresh the list when we're done
-      this.getPlayers();
+      this.getPlayers(); // get a new player when done
     });
   }
 
@@ -106,7 +107,7 @@ export default class App extends React.Component {
     // Make the request
     fetch(request).then(response => response.json()).then(json => {
       this.getContent(); // refresh the list when we're done
-      this.getPlayers();
+      this.getPlayers(); // get a new player when done
     });
   }
 
