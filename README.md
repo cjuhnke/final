@@ -1,1 +1,1 @@
-https://exp.host/@cjuhnke/final
+https://exp.host/@cjuhnke/nba-player-ranker
