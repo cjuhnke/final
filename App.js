@@ -156,7 +156,7 @@ class HomeScreen extends React.Component {
         <View style={styles.ranker}>
           {this.state.players[0] &&
             <Button stylesiconLeft onPress={() => this.props.navigation.navigate('Details')}>
-              <Text>Go to Details</Text>
+              <Text>See Rankings</Text>
             </Button>}
         </View>
       </Container>
